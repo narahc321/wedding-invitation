@@ -167,10 +167,10 @@ var Countdown = {
         s = (s < 10) ? "0" + s : s;
 
     this.values = {
-    	days   : this.$.days.parent().attr('d'),
-	    hours  : this.$.hours.parent().attr('h'),
-        minutes: this.$.minutes.parent().attr('m'),
-        seconds: this.$.seconds.parent().attr('s'),
+    	days   : this.$.days.parent().attr(d),
+	    hours  : this.$.hours.parent().attr(h),
+        minutes: this.$.minutes.parent().attr(m),
+        seconds: this.$.seconds.parent().attr(s),
     };
     
     // Initialize total seconds
