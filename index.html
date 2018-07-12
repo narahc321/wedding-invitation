@@ -5,13 +5,34 @@
 	<link rel="stylesheet" href="assets/css/countdown.css">
 </head>
 <body>
+	<script type="text/javascript">
+		var now = new Date();
+        var eventDate = new Date(2018, 8, 29, 8 ,20, 0);
+        var currentTime = new now.getTime();
+        var eventTime = new evenDate.getTime();
+        var remTime = eventTime - currentTime;
+
+        var s = Math.floor(remTime / 1000);
+        var m = Math.floor(s / 60);
+        var h = Math.floor(m / 60);
+        var d = Math.floor(h / 24);
+
+        h %= 24;
+        m %= 60;
+        s %= 60;
+
+        d = (d < 10) ? "0" + d : d;
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+	</script>
 	<div class="wrap">  
   <h1>Draft <strong>Countdown</strong></h1>
 
   <div class="countdown">
 
   	
-  	<div class="bloc-time days" data-init-value="99">
+  	<div class="bloc-time days" data-init-value=d>
       <span class="count-title">Days</span>
 
       <div class="figure days days-1">
@@ -37,7 +58,7 @@
       </div>
     </div>
 
-    <div class="bloc-time hours" data-init-value="24">
+    <div class="bloc-time hours" data-init-value=h>
       <span class="count-title">Hours</span>
 
       <div class="figure hours hours-1">
@@ -63,7 +84,7 @@
       </div>
     </div>
 
-    <div class="bloc-time min" data-init-value="0">
+    <div class="bloc-time min" data-init-value=m>
       <span class="count-title">Minutes</span>
 
       <div class="figure min min-1">
@@ -89,7 +110,7 @@
       </div>
     </div>
 
-    <div class="bloc-time sec" data-init-value="0">
+    <div class="bloc-time sec" data-init-value=s>
       <span class="count-title">Seconds</span>
 
         <div class="figure sec sec-1">
@@ -146,31 +167,12 @@ var Countdown = {
    	};
 
     // Init countdown values
-    var now = new Date();
-        var eventDate = new Date(2018, 8, 29, 8 ,20, 0);
-        var currentTime = new now.getTime();
-        var eventTime = new evenDate.getTime();
-        var remTime = eventTime - currentTime;
-
-        var s = Math.floor(remTime / 1000);
-        var m = Math.floor(s / 60);
-        var h = Math.floor(m / 60);
-        var d = Math.floor(h / 24);
-
-        h %= 24;
-        m %= 60;
-        s %= 60;
-
-        d = (d < 10) ? "0" + d : d;
-        h = (h < 10) ? "0" + h : h;
-        m = (m < 10) ? "0" + m : m;
-        s = (s < 10) ? "0" + s : s;
-
+    	
     this.values = {
-    	days   : this.$.days.parent().attr(d),
-	    hours  : this.$.hours.parent().attr(h),
-        minutes: this.$.minutes.parent().attr(m),
-        seconds: this.$.seconds.parent().attr(s),
+    	days   : this.$.days.parent().attr('data-init-value'),
+	    hours  : this.$.hours.parent().attr('data-init-value'),
+        minutes: this.$.minutes.parent().attr('data-init-value'),
+        seconds: this.$.seconds.parent().attr('data-init-value'),
     };
     
     // Initialize total seconds
