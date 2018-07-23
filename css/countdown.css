@@ -39,8 +39,8 @@ h2 strong {
 }
 
 .countdown {
-  width: 200%;
-  margin: auto;
+  width: 150%;
+  /*margin: auto;*/
 }
 .countdown .bloc-time {
   float: left;
