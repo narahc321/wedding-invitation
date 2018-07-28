@@ -39,12 +39,46 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
-    $(".navbar").addClass("d-none");
-  })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-    $(".navbar").removeClass("d-none");
-  })
+  var engagementDate = new Date('2018-08-19 11:00 AM');
+  var bridesReceptionDate = new Date('2018-08-28 07:00 PM');
+  var marriageDate = new Date('2018-08-29 08:20 AM');
+  var groomsReceptionDate = new Date('2018-09-02 12:00 AM');
+
+  var clock = $('.engagementClock').FlipClock((engagementDate - new Date())/ 1000, {
+    clockFace: 'DailyCounter',
+    countdown: true,
+    callbacks : {
+      stop: function() {
+        $('.engagementClock').html('<b>Event is Done. Please check the gallery for Images.</b>');
+      }
+    }
+  });
+  var clock = $('.bridesReceptionClock').FlipClock((bridesReceptionDate - new Date())/ 1000, {
+    clockFace: 'DailyCounter',
+    countdown: true,
+    callbacks : {
+      stop: function() {
+        $('.bridesReceptionClock').html('<b>Event is Done. Please check the gallery for Images.</b>');
+      }
+    }
+  });
+  var clock = $('.marriageClock').FlipClock((marriageDate - new Date())/ 1000, {
+    clockFace: 'DailyCounter',
+    countdown: true,
+    callbacks : {
+      stop: function() {
+        $('.marriageClock').html('<b>Event is Done. Please check the gallery for Images.</b>');
+      }
+    }
+  });
+  var clock = $('.groomsReceptionClock').FlipClock((groomsReceptionDate - new Date())/ 1000, {
+    clockFace: 'DailyCounter',
+    countdown: true,
+    callbacks : {
+      stop: function() {
+        $('.groomsReceptionClock').html('<b>Event is Done. Please check the gallery for Images.</b>');
+      }
+    }
+  });
 
 })(jQuery); // End of use strict
