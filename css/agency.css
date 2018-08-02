@@ -55,7 +55,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 
@@ -172,10 +172,10 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/Engagement/Collage22.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -205,7 +205,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 500px;
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
@@ -816,4 +816,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   width: 156px;
   max-width: 100%;
   max-height: 100%;
+}
+
+.gallery{
+	height: 500px;
+	width: 500px;
 }
