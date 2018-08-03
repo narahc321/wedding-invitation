@@ -172,10 +172,10 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/Engagement/collage_51.jpg");
+  background-image: url("../img/Engagement/collage_52.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center top;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
