@@ -172,7 +172,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/Engagement/collage33.jpg");
+  background-image: url("../img/collagefinal4.jpg");
   background-repeat: no-repeat;
   /*background-attachment: scroll;*/
   background-position: center center;
@@ -184,7 +184,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 400px;
   padding-bottom: 100px;
 }
 
@@ -206,8 +206,8 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 500px;
-    padding-bottom: 200px;
+    padding-top: 800px;
+    padding-bottom: 500px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
