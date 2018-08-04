@@ -176,7 +176,7 @@ header.masthead {
   background-repeat: no-repeat;
   /*background-attachment: scroll;*/
   background-position: center center;
-  background-size: auto;
+  background-size: 100%;
   /*-webkit-background-size: cover;*/
   /*-moz-background-size: cover;*/
   /*-o-background-size: cover;*/
