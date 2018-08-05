@@ -825,11 +825,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .galleryCarouselInnerMax {
-  height: 600px !important;
-
+  height: 500px !important;
+  width: 500px !important;
 }
 
 .galleryCarouselInnerMin {
-  height: 600px !important;
+  height: 500px !important;
+  width: 500px !important;
 
 }
