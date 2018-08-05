@@ -172,7 +172,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/collagefinal4.jpg");
+  background-image: url("../img/collagefinal6.jpg");
   background-repeat: no-repeat;
   /*background-attachment: scroll;*/
   background-position: center center;
@@ -822,4 +822,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .gallery{
 	height: 500px;
 	width: 500px;
+}
+
+.galleryCarouselInnerMax {
+  height: 600px !important;
+
+}
+
+.galleryCarouselInnerMin {
+  height: 600px !important;
+
 }
